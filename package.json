@@ -1,11 +1,21 @@
 {
-  "name": "node-basic",
+  "name": "polymatheia",
   "version": "0.0.1",
   "private": "true",
   "dependencies": {
-    "express": "3.0.0alpha4"
+    "body-parser": "^1.15.2",
+    "chai": "^3.5.0",
+    "express": "^3.0.0-alpha4",
+    "mocha": "^3.0.2",
+    "mongoose": "^4.5.9",
+    "nodelint": "^0.6.2",
+    "request": "^2.74.0",
+    "standard": "^8.0.0-beta.5"
   },
   "scripts": {
-    "start": "node app.js"
+    "fix": "standard --fix",
+    "lint": "standard",
+    "start": "node app.js",
+    "test": "./node_modules/.bin/mocha --reporter spec"
   }
 }
